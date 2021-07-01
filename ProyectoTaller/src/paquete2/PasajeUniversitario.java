@@ -21,11 +21,11 @@ public class PasajeUniversitario extends PasajeInterCantonal {
         this.nomUni = nomUni;
     }
 
-    public String getNombreunivercidad() {
+    public String getNombreuniversidad() {
         return nomUni;
     }
 
-    public void setNombreUnivercidad(String nomUni) {
+    public void setNombreUniversidad(String nomUni) {
         this.nomUni = nomUni;
     }
 
