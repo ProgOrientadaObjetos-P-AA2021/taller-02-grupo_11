@@ -14,7 +14,13 @@ import java.io.Serializable;
 public class PasajeUniversitario extends PasajeInterCantonal {
 
     String nomUni;
-///****************************
+
+    public PasajeUniversitario(String nombre, String cedula, String origen, 
+            String destino, double numKmD, double tarifaB, String nomUni) {
+        super(nombre, cedula, origen, destino, numKmD, tarifaB);
+        this.nomUni = nomUni;
+    }
+
     public String getNombreunivercidad() {
         return nomUni;
     }
