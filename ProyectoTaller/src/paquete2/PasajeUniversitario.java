@@ -21,11 +21,11 @@ public class PasajeUniversitario extends PasajeInterCantonal {
         this.nomUni = nomUni;
     }
 
-    public String getNombreunivercidad() {
+    public String getNombreuniversidad() {
         return nomUni;
     }
 
-    public void setNombreUnivercidad(String nomUni) {
+    public void setNombreUniversidad(String nomUni) {
         this.nomUni = nomUni;
     }
 
@@ -36,5 +36,20 @@ public class PasajeUniversitario extends PasajeInterCantonal {
 
     public double getValorP() {
         return valorP;
+    }
+      public String toString() {
+        String cadena = String.format(">>>> TRANSPORTE MENOR DE EDAD <<<<<<: \n"
+                + ">>> Nombre del Pasajero: %s\n"
+                + ">>> Cédula: %s\n"
+                + ">>> Origen: %s\n"
+                + ">>> Destino: %s\n"
+                + ">>> El número de distancia es: %.2f\n"
+                + ">>> Tarifa base: %.2f\n"
+                + ">>> Valor Base: %.2f\n"
+                + ">>> Nombre de la Universidad: %.2f\n" , 
+                getNombre(),getCedula(),getOrigen(),
+                getDestino(),getNumKmD(),getTarifaB(),
+                getValorP(), getNombreuniversidad()); 
+        return cadena;
     }
 }
