@@ -46,10 +46,11 @@ public class PasajeNormal extends PasajeInterCantonal
                 + ">>> El número de distancia es: %.2f\n"
                 + ">>> Tarifa base: %.2f\n"
                 + ">>> Valor Base: %.2f\n"
-                + ">>> Porcentaje adicional: %.2f\n" ,super.toString(), 
+                + ">>> Porcentaje adicional: %.2f\n"
+                + ">>> Valor Total: %.2f" ,super.toString(), 
                 getNombre(),getCedula(),getOrigen(),
                 getDestino(),getNumKmD(),getTarifaB(),
-                getValorP(), getPorcentAd()); 
+                getValorP(), getPorcentAd(), getValorP()); 
         return cadena;
     }
 }

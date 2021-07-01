@@ -48,10 +48,11 @@ public class PasajeUniversitario extends PasajeInterCantonal
                 + ">>> El número de distancia es: %.2f\n"
                 + ">>> Tarifa base: %.2f\n"
                 + ">>> Valor Base: %.2f\n"
-                + ">>> Nombre de la Universidad: %.2f\n" ,super.toString(), 
+                + ">>> Nombre de la Universidad: %.2f\n"
+                + ">>> Valor Total: %.2f" ,super.toString(), 
                 getNombre(),getCedula(),getOrigen(),
                 getDestino(),getNumKmD(),getTarifaB(),
-                getValorP(), getNombreuniversidad()); 
+                getValorP(), getNombreuniversidad(), getValorP()); 
         return cadena;
     }
 }

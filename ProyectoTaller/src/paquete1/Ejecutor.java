@@ -33,7 +33,7 @@ public class Ejecutor {
                 nombreArchivo);
         
         for (int i = 0; i < pasajes.size(); i++) {
-
+            pasajes.get(i).setValorP();
             // establecer el valor del atributo registro
             archivo.establecerRegistro(pasajes.get(i));
             // establecer en el archivo el atributo del registro
