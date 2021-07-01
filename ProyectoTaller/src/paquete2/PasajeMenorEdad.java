@@ -36,4 +36,19 @@ public class PasajeMenorEdad extends PasajeInterCantonal
     public double getValorP (){
         return valorP; 
     }
+      public String toString() {
+        String cadena = String.format(">>>> TRANSPORTE MENOR DE EDAD <<<<<<: \n"
+                + ">>> Nombre del Pasajero: %s\n"
+                + ">>> Cédula: %s\n"
+                + ">>> Origen: %s\n"
+                + ">>> Destino: %s\n"
+                + ">>> El número de distancia es: %.2f\n"
+                + ">>> Tarifa base: %.2f\n"
+                + ">>> Valor Base: %.2f\n", 
+                getNombre(),getCedula(),getOrigen(),
+                getDestino(),getNumKmD(),getTarifaB(),
+                getValorP()); 
+        return cadena;
+    }
+  
 }
