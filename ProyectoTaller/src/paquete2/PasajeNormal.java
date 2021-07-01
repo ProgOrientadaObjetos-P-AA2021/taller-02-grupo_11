@@ -13,6 +13,22 @@ import java.io.Serializable;
  */
 public class PasajeNormal extends PasajeInterCantonal 
         implements Serializable{
-    
+    double porcentAd;
+
+    public double getPorcentAd() {
+        return porcentAd;
+    }
+
+    public void setPorcentAd(double porcentAd) {
+        this.porcentAd = porcentAd;
+    }
+
+    @Override
+    public void setValorP() {
+        valorP = (numKmD * 0.15) + (tarifaB + (tarifaB *(porcentAd/100)));
+    }
+    public double getValorP (){
+        return valorP; 
+    }
     
 }
