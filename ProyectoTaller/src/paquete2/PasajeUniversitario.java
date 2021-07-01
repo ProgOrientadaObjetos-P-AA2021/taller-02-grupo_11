@@ -31,7 +31,7 @@ public class PasajeUniversitario extends PasajeInterCantonal {
 
     @Override
     public void setValorP() {
-        valorP = (tarifaB / 100);
+        valorP = (tarifaB / 2);
     }
 
     public double getValorP() {
