@@ -15,6 +15,12 @@ public class PasajeNormal extends PasajeInterCantonal
         implements Serializable{
     double porcentAd;
 
+    public PasajeNormal(String nombre, String cedula, String origen, 
+            String destino, double numKmD, double tarifaB) {
+        super(nombre, cedula, origen, destino, numKmD, tarifaB);
+        porcentAd = 0.3;
+    }
+
     public double getPorcentAd() {
         return porcentAd;
     }
