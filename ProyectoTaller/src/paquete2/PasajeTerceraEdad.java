@@ -29,14 +29,15 @@ public class PasajeTerceraEdad extends PasajeInterCantonal {
     }
       @Override
     public String toString() {
-        String cadena = String.format(">>> TRANSPORTE TERCERA DE EDAD <<<<: \n"
+        String cadena = String.format("%s\n>>> TRANSPORTE TERCERA DE EDAD <<<<: "
+                + "\n"
                 + ">>> Nombre del pasajero: %s\n"
                 + ">>> Cédula de identidad: %s\n"
                 + ">>> Su lugar de Origen es: %s\n"
                 + ">>> Destino con rumbo a: %s\n"
                 + ">>> Número de distancia: %.2f\n"
                 + ">>> La tarifa base es: %.2f\n"
-                + ">>> Valor del pasaje: %.2f\n", 
+                + ">>> Valor del pasaje: %.2f\n",super.toString(), 
                 getNombre(),getCedula(),getOrigen(),
                 getDestino(),getNumKmD(),getTarifaB(),
                 getValorP()); 

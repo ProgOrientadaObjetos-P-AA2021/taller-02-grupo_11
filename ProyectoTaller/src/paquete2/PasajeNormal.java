@@ -37,7 +37,8 @@ public class PasajeNormal extends PasajeInterCantonal
         return valorP; 
     }
     public String toString() {
-        String cadena = String.format(">>>> TRANSPORTE MENOR DE EDAD <<<<<<: \n"
+        String cadena = String.format("%s\n>>>> TRANSPORTE NORMAL <<<<<<: "
+                + "\n"
                 + ">>> Nombre del Pasajero: %s\n"
                 + ">>> Cédula: %s\n"
                 + ">>> Origen: %s\n"
@@ -45,7 +46,7 @@ public class PasajeNormal extends PasajeInterCantonal
                 + ">>> El número de distancia es: %.2f\n"
                 + ">>> Tarifa base: %.2f\n"
                 + ">>> Valor Base: %.2f\n"
-                + ">>> Porcentaje adicional: %.2f\n" , 
+                + ">>> Porcentaje adicional: %.2f\n" ,super.toString(), 
                 getNombre(),getCedula(),getOrigen(),
                 getDestino(),getNumKmD(),getTarifaB(),
                 getValorP(), getPorcentAd()); 

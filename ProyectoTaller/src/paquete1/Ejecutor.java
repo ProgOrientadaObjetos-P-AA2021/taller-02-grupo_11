@@ -13,14 +13,21 @@ public class Ejecutor {
 
     public static void main(String[] args) {
 
-        // nombre del archivo
-        String nombreArchivo = "pasajes.data";
+        
+           String nombreArchivo = "pasajes.data";
         ArrayList<PasajeInterCantonal> pasajes = new ArrayList<>();
+        PasajeMenorEdad pasajeM = new PasajeMenorEdad("Roberto", "110254789", 
+                "Quito",
+        "loja", 26, 5);
+        pasajes.add(pasajeM);
+        
+
         
         
         EscrituraArchivoSecuencial archivo = new EscrituraArchivoSecuencial(nombreArchivo);
 
         for (int i = 0; i < pasajes.size(); i++) {
+            
             
             // establecer el valor del atributo registro
             archivo.establecerRegistro(pasajes.get(i));

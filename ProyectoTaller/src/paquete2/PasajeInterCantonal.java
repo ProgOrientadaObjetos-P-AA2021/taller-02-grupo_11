@@ -83,12 +83,9 @@ public abstract class PasajeInterCantonal implements Serializable{
     }
 
     public abstract void setValorP();
-    
-  
-    
-    
+   
     @Override
     public String toString(){ 
-        return String.format("Pasaje.");
+        return String.format("Pasaje");
     } 
 }

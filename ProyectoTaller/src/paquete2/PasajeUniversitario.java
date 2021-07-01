@@ -11,7 +11,8 @@ import java.io.Serializable;
  *
  * @author reroes
  */
-public class PasajeUniversitario extends PasajeInterCantonal {
+public class PasajeUniversitario extends PasajeInterCantonal  
+        implements Serializable {
 
     String nomUni;
 
@@ -38,7 +39,8 @@ public class PasajeUniversitario extends PasajeInterCantonal {
         return valorP;
     }
       public String toString() {
-        String cadena = String.format(">>>> TRANSPORTE MENOR DE EDAD <<<<<<: \n"
+        String cadena = String.format("%s\n>>>> TRANSPORTE UNIVERSITARIO <<<<<<:"
+                + " \n"
                 + ">>> Nombre del Pasajero: %s\n"
                 + ">>> Cédula: %s\n"
                 + ">>> Origen: %s\n"
@@ -46,7 +48,7 @@ public class PasajeUniversitario extends PasajeInterCantonal {
                 + ">>> El número de distancia es: %.2f\n"
                 + ">>> Tarifa base: %.2f\n"
                 + ">>> Valor Base: %.2f\n"
-                + ">>> Nombre de la Universidad: %.2f\n" , 
+                + ">>> Nombre de la Universidad: %.2f\n" ,super.toString(), 
                 getNombre(),getCedula(),getOrigen(),
                 getDestino(),getNumKmD(),getTarifaB(),
                 getValorP(), getNombreuniversidad()); 
